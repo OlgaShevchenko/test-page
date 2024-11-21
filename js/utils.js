@@ -72,7 +72,21 @@ $(document).ready(function(){
 		}		
 	});
 	
+	$('.subscribe__form-email').on('input', function() {
+		$('.subscribe__form-email').removeClass('subscribe__form-email_error');
+	});
 	
+	$(".subscribe__form-submit").click(function (e) {
+		e.preventDefault();
+		let email = $('.subscribe__form-email').val();		
+		const regex =/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if (!regex.test(email)) {
+			$('.subscribe__form-email').addClass('subscribe__form-email_error');
+		}
+		else {
+			
+		}
+	});
 	
 	
 });

@@ -323,7 +323,7 @@ body {
 	margin-bottom: 40px;
 	transition: all 0.3s ease-in;
 	text-decoration: none;	
-	border: 1px solid #fff;
+	border: 1px solid #F9F9F9;
 }
 @media (min-width: 769px) {
 	.card__link {
@@ -368,11 +368,11 @@ body {
 	}
 }
 .card__item_imagebg {
-	background: url('../images/item_imagebg1.jpg') center center no-repeat;
+	background: url('../images/item_imagebg.webp') center center no-repeat;
 	background-size: cover;		
 }
 .card__item_imagebg2 {
-	background: url('../images/item_imagebg2.jpg') center center no-repeat;
+	background: url('../images/item_imagebg2.webp') center center no-repeat;
 	background-size: cover;
 }
 .card__category {
@@ -692,6 +692,9 @@ body {
 .subscribe__form-email:focus {
 	border: 1px solid var(--link-color);
 }
+.subscribe__form-email_error {
+	border: 1px solid red;
+}
 .subscribe__form-submit {
 	width: 100%;
 	background-color: var(--blue-bg);
@@ -883,3 +886,4 @@ body {
 		padding-top: 35px;
 	}
 }
+
